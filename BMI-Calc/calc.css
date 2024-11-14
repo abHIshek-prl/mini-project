@@ -7,7 +7,6 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,25 +17,133 @@ body{
 }
 .nav{
     height: 10%;
-    width: 95%;
+    width: 98%;
     background-color: transparent;
-    border: 3px solid white;
+    border-bottom: 1px solid white;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
 }
+
+
+
+.head{
+    font-weight: bold;
+    font-size: 18px;
+    color: white !important;
+}
+#bar{
+    background-color: transparent !important;
+    width: 100% !important;
+}
+.options{
+    background-color: transparent !important;
+    color: white !important;
+}
+#opt{
+    color: white !important;
+}
+
+#opt:hover{
+    color: red !important;
+}
+.dropdown-item{
+    background-color: transparent !important;
+}
+
+#mre{
+    background-color: transparent !important;
+}
+.three{
+    background-color: rgba(255, 255, 255, 0.253) !important;
+}
+.shut{
+    background-color: rgba(255, 0, 0, 0.395) !important;
+}
+
+
+
+
 .section{
     height: 90%;
     width: 100%;
     background-color: transparent;
-    /* border: 3px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 .page{
-    height: 70%;
+    height: 80%;
     width: 40%;
     background-color: transparent;
-    border: 3px solid white;
+    border:0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 3%;
+}
+.cpy{
+    height: 92%;
+    width: 95%;
+    text-align: center;
+}
+.cpy h3{
+    color: white;
+}
+input{
+    width: 90%;
+    height: 12%;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+#btn{
+    height: 10%;
+    width: 50%;
+    border: 3px solid rgb(54, 230, 48);
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.result{
+    height: 23%;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:hover{
+    color: rgb(54, 230, 48) ;
+    border: 3px solid white;
+}
+
+@media (max-width:321px) {
+    .page{ 
+        height: 85%;
+        width: 90%;
+        border-radius: 0;
+    }
+}
+@media (max-width:376px) {
+    .page{ 
+        height: 80%;
+        width: 85%;
+    }
+}
+@media (max-width:426px) {
+    .page{ 
+        height: 70%;
+        width: 70%;
+    }
 }
